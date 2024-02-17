@@ -1,0 +1,53 @@
+.navi
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    list-style: none
+    margin: 0
+    padding: 0
+    z-index: 100
+
+    &>li>a
+        font-size: 4em
+        color: #fff
+        position: relative
+        text-decoration: none
+
+    &>li:nth-child(1)>a:before
+        position: absolute
+        background: -webkit-linear-gradient(86deg,#5b8498 0%, #55a9b9 40%, #39e4d8 80%)
+        -webkit-background-clip: text
+        color: transparent
+        top: -7px
+        left: 0
+        width: 0
+        overflow: hidden
+        content: attr(data-text)
+        transition: 0.6s
+    &>li:nth-child(2)>a:before
+        position: absolute
+        /* background: -webkit-linear-gradient(86deg,#5b8498 0%, #55a9b9 40%, #39e4d8 80%)*/
+        background: -webkit-linear-gradient(77deg,rgba(15,16,16,0.54) 0%, rgba(159,83,134,0.81) 40%, rgba(192,46,160,0.48) 90%)
+        -webkit-background-clip: text
+        color: transparent
+        top: -7px
+        left: 0
+        width: 0
+        overflow: hidden
+        content: attr(data-text)
+        transition: 0.6s
+    &>li>a:hover:before
+        width: 100%
+.photo
+    background-color: #a4a2a2
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: url('../images/photo.webp')
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    transition: 0.5s
