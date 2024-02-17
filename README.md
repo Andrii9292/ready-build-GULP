@@ -6,7 +6,7 @@
 ## Установка
 1. Убедитесь, что у вас установлен Node.js (https://nodejs.org/).
 2. Клонируйте репозиторий на свой компьютер: `git clone https://github.com/Andrii9292/ready-build-GULP.git`
-3. Перейдите в папку проекта: `cd new_project`
+3. Перейдите в папку проекта: `cd ready-build-GULP`
 4. Установите зависимости: `npm install`
 
 ## Структура проекта
